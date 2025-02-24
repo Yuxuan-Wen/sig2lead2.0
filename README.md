@@ -8,7 +8,7 @@
 * Note that 2h7l is renewed as 4TRJ
 
 ### 1 Batch downloading `.fasta` files and `.pdb` files from the PDB database [https://www.rcsb.org/]
-a. Batch download `.fasta` files: https://www.rcsb.org/downloads/fasta
-b. Batch download `.pdb` files: https://www.rcsb.org/downloads?
+- a. Batch download `.fasta` files: https://www.rcsb.org/downloads/fasta
+- b. Batch download `.pdb` files: https://www.rcsb.org/downloads?
 
 ### 2 Generating embeddings
