@@ -13,4 +13,8 @@
 - a. Batch download `.fasta` files: https://www.rcsb.org/downloads/fasta
 - b. Batch download `.pdb` files: https://www.rcsb.org/downloads?
 
-### 2 Generating embeddings
+### 2 Batch downloading and processing Positive and Negative smis on DUDE
+
+## C
+
+### 1 Generating embeddings
