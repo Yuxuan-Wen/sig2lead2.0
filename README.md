@@ -73,4 +73,7 @@ python scripts/embed_dir.py --input ./\(1\)3di_pdb_sequences\(each-mainstring\) 
 python scripts/embed_dir.py --input ./\(2\)aa_pdb_fasta\(each-mainstring\) --output ./\(2\)pdb_fasta_emb --half 1 --is_3Di 0 --per_protein 1
 ```
 
-
+- PROSTT-5
+```
+python ./Embedding/prott5_embedder_dir.py --input ./Embedding/\(2\)aa_pdb_fasta\(each-mainstring\) --output ./Embedding/\(2\)aa_pdb_fasta_TT_emb --per_protein 1
+```
