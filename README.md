@@ -19,11 +19,12 @@
 
 ### 3 Generating 3Di with fold seek
 - a. Setup foldseek (macOS)
-  	```
+```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install wget
 ```
-  	```
+
+```
 wget https://mmseqs.com/foldseek/foldseek-osx-universal.tar.gz
 tar xvzf foldseek-osx-universal.tar.gz
 export PATH=$(pwd)/foldseek/bin/:$PATH
