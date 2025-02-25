@@ -39,16 +39,23 @@ import os
 
 input_fasta = "3di_embedding.fasta"
 output_dir = "pdb_sequences"
+Main_string = True
 
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
 for record in SeqIO.parse(input_fasta, "fasta"):
-    pdb_id = record.id
+
+    if Main_string:
+        if "_B" in record.id or "_C" in record.id or "_D" in record.id or "_E" in record.id or "_F" in record.id or "_L" in record.id or "_I" in record.id:
+            continue
+
+    pdb_id = record.id  # 使用PDB ID命名
     output_file = os.path.join(output_dir, f"{pdb_id}.fasta")
 
     with open(output_file, "w") as f:
         f.write(f">{record.id}\n{str(record.seq)}\n")
+
 ```
 
 
