@@ -11,10 +11,30 @@
 
 ### 1 Batch downloading `.fasta` files and `.pdb` files from the PDB database [https://www.rcsb.org/]
 - a. Batch download `.fasta` files: https://www.rcsb.org/downloads/fasta
-- b. Batch download `.pdb` files: https://www.rcsb.org/downloads?
+- b. Batch download `.pdb` files: https://www.rcsb.org/downloads
 
 ### 2 Batch downloading and processing Positive and Negative smis on DUDE
+
+
+
+### 3 Generating 3Di with fold seek
+- a. Setup foldseek (macOS)
+  	```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install wget
+```
+  	```
+wget https://mmseqs.com/foldseek/foldseek-osx-universal.tar.gz
+tar xvzf foldseek-osx-universal.tar.gz
+export PATH=$(pwd)/foldseek/bin/:$PATH
+```
+* Linux: refers to this blog [https://blog.csdn.net/gitblog_01274/article/details/143039264]
+- 
+
 
 ## C
 
 ### 1 Generating embeddings
+
+
+
