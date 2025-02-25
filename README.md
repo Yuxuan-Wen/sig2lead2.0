@@ -61,7 +61,16 @@ for record in SeqIO.parse(input_fasta, "fasta"):
 
 ## C
 
-### 1 Generating embeddings
+### 1 Generating embeddings using PROST5
 
+
+- for 3Di:
+```
+python scripts/embed_dir.py --input ./\(1\)3di_pdb_sequences\(each-mainstring\) --output ./\(1\)3di_pdb_sequences_emb --half 1 --is_3Di 1 --per_protein 1
+```
+- for AA:
+```
+python scripts/embed_dir.py --input ./\(2\)aa_pdb_fasta\(each-mainstring\) --output ./\(2\)pdb_fasta_emb --half 1 --is_3Di 0 --per_protein 1
+```
 
 
