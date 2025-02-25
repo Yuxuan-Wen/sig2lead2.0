@@ -32,7 +32,24 @@ export PATH=$(pwd)/foldseek/bin/:$PATH
 * Linux: refers to this blog [https://blog.csdn.net/gitblog_01274/article/details/143039264]
 - 
 
+Split fasta files with this script:
+```
+from Bio import SeqIO
+import os
 
+input_fasta = "3di_embedding.fasta"
+output_dir = "pdb_sequences"
+
+if not os.path.exists(output_dir):
+    os.makedirs(output_dir)
+
+for record in SeqIO.parse(input_fasta, "fasta"):
+    pdb_id = record.id  # 使用PDB ID命名
+    output_file = os.path.join(output_dir, f"{pdb_id}.fasta")
+
+    with open(output_file, "w") as f:
+        f.write(f">{record.id}\n{str(record.seq)}\n")
+```
 
 
 ## C
