@@ -33,6 +33,8 @@ export PATH=$(pwd)/foldseek/bin/:$PATH
 - 
 
 
+
+
 ## C
 
 ### 1 Generating embeddings
