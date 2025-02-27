@@ -30,7 +30,13 @@ tar xvzf foldseek-osx-universal.tar.gz
 export PATH=$(pwd)/foldseek/bin/:$PATH
 ```
 * Linux: refers to this blog [https://blog.csdn.net/gitblog_01274/article/details/143039264]
-- 
+- b. Setup D-SCRIPT [https://github.com/samsledje/D-SCRIPT]
+- c. Run script in "dscript.commands.extract_3di"
+
+```
+python -m dscript.commands.extract_3di ./pdb- 3di_embedding.fasta
+```
+
 
 Split fasta files with this script:
 ```
