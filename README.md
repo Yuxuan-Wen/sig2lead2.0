@@ -83,3 +83,13 @@ python scripts/embed_dir.py --input ./\(2\)aa_pdb_fasta\(each-mainstring\) --out
 ```
 python ./Embedding/prott5_embedder_dir.py --input ./Embedding/\(2\)aa_pdb_fasta\(each-mainstring\) --output ./Embedding/\(2\)aa_pdb_fasta_TT_emb --per_protein 1
 ```
+
+## CL
+
+
+Setting up the environment
+```
+pip install h5py
+pip install pyyaml
+
+```
